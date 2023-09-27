@@ -33,12 +33,6 @@ Visit our website to explore our services and portfolio:
 
 Contact us to discuss your specific needs, and we'll tailor our services to meet your goals.
 
-## Contributing
-We welcome collaboration with clients and experts in website design, SEO, and sales planning. If you have valuable insights, ideas, or would like to work together on a project, please reach out.
-
-## License
-The content and services provided on our website may be subject to individual terms and licenses. Please review the specific terms and conditions associated with each resource or service.
-
 ## Contact
 For inquiries, consultations, or project collaborations, please contact our team:
 

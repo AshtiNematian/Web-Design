@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     #My_Apps:
     'accounts',
     'services',
+    'blogs'
+
 
 ]
 

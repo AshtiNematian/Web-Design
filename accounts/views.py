@@ -8,8 +8,6 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 import jwt
 from django.conf import settings
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
 
 from .models import Users
 from .renders import UserRenderer
@@ -27,16 +25,12 @@ class CustomRedirect(HttpResponsePermanentRedirect):
 class VerifyEmail(views.APIView):
     serializer_class = EmailVerificationSerializer
 
-    token_param_config = openapi.Parameter(
-        'token', in_=openapi.IN_QUERY, description='Description', type=openapi.TYPE_STRING)
-
-    @swagger_auto_schema(manual_parameters=[token_param_config])
     def get(self, request):
         token = request.GET.get('token')
         print(token)
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
         print(payload)
-        user = User.objects.get(id=payload['user_id'])
+        user = Users.objects.get(id=payload['user_id'])
         print(user)
         try:
             if not user.is_verified:
@@ -120,5 +114,3 @@ class ChangePasswordView(generics.UpdateAPIView):
     queryset = Users.objects.all()
     permission_classes = (IsAuthenticated,)
     serializer_class = ChangePasswordSerializer
-
-

@@ -5,11 +5,13 @@ from django.shortcuts import render
 
 from rest_framework import generics
 from .models import ServicesList
-from .serializers import ServicesSerializer
+from .serializer import ServicesSerializer
+
 
 class ServicesListView(generics.ListAPIView):
     queryset = ServicesList.objects.all()
     serializer_class = ServicesSerializer
+
 
 class ServicesDetailsView(generics.RetrieveAPIView):
     queryset = ServicesList.objects.all()

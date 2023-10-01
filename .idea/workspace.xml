@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "app__services",
+    "git-widget-placeholder": "app__blogs",
     "last_opened_file_path": "C:/Users/NematianA/PycharmProjects/Web_Design",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,7 +89,9 @@
       <workItem from="1695036070094" duration="1348000" />
       <workItem from="1695110425170" duration="3447000" />
       <workItem from="1695712269417" duration="119000" />
-      <workItem from="1695811230641" duration="5507000" />
+      <workItem from="1695811230641" duration="6808000" />
+      <workItem from="1696140461487" duration="1810000" />
+      <workItem from="1696155236885" duration="6237000" />
     </task>
     <servers />
   </component>
